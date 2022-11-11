@@ -19,9 +19,10 @@
   align-items: center;
 
 }
-div, h1, h2, h3, h4, p, table, tr, td, img, a, ul, li {
+
+/* div, h1, h2, h3, h4, p, table, tr, td, img, a, ul, li {
   border: 1px solid red;
-}
+} */
 
 .logo {
   width: 228px;
@@ -86,13 +87,14 @@ div, h1, h2, h3, h4, p, table, tr, td, img, a, ul, li {
 
 .description {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
 .two-columns {
   width: 80%;
   min-height: 200px;
-  margin: 100px auto 0;
+  margin: 100px 0 0;
   flex-direction: row;
   justify-content: space-between;
   display: flex;
@@ -211,6 +213,7 @@ div, h1, h2, h3, h4, p, table, tr, td, img, a, ul, li {
   font-size: 36px;
   font-weight: normal;
   z-index: 1;
+  text-align: center;
 }
 
 .feynman__link {
@@ -237,9 +240,10 @@ div, h1, h2, h3, h4, p, table, tr, td, img, a, ul, li {
   display: flex;
   display: block;
   position: relative;
-  padding-top: 90px;
+  padding: 90px 0 90px;
   overflow: hidden;
   color: #fff;
+  z-index: -1;
 }
 
 .section__title_theme_dark {
@@ -249,7 +253,6 @@ div, h1, h2, h3, h4, p, table, tr, td, img, a, ul, li {
   font-weight: 600;
   width: 60%;
   text-align: center;
-  z-index: 12;
   
 }
 
@@ -260,18 +263,16 @@ div, h1, h2, h3, h4, p, table, tr, td, img, a, ul, li {
   width: 60%;
   text-align: center;
   margin: 0 auto;
-  z-index: 1;
 }
 
 .table_theme_dark {
-  margin: 0 auto 90px;
+  margin: 0 auto;
 }
 
 .table__cell_theme_dark {
   width: 200px;
   margin-right: 0;
   margin-top: 80px;
-  z-index: 1;
   list-style: none;
 }
 
@@ -297,22 +298,21 @@ div, h1, h2, h3, h4, p, table, tr, td, img, a, ul, li {
   right: -210px;
   background-image: url("../images/kaufman-triangle.svg");
   background-size: cover;
+  z-index: -1;
 }
 
 .footer {
   background-color: #1f1f1f;
   min-height: 350px;
   color: #fff;
+  display: flex;
 }
 
 .footer__columns {
   width: 90%;
-  padding-top: 60px;
-  margin: 0 auto 40px;
+  margin: 90px auto 40px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  min-height: 250px;
 }
 
 .footer__columns_content_copyright {
@@ -327,7 +327,7 @@ div, h1, h2, h3, h4, p, table, tr, td, img, a, ul, li {
 }
 
 .footer_author {
-  margin-bottom: 18px;
+  margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -349,7 +349,7 @@ div, h1, h2, h3, h4, p, table, tr, td, img, a, ul, li {
 .footer__column-links {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin: 20px 0 16px;
   justify-content: space-between;
 
 }
@@ -368,7 +368,7 @@ div, h1, h2, h3, h4, p, table, tr, td, img, a, ul, li {
   flex-direction: column;
 }
 
-.social-logo {
+.footer__social-link-logo {
   width: 16px;
   height: 16px;
   margin-right: 10px;
