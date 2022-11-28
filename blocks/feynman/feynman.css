@@ -4,4 +4,6 @@
   position: relative;
   min-height: 890px;
   flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 100px;
 }

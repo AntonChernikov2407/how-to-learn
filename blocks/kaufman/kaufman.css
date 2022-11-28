@@ -4,5 +4,6 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  color: #fff;
+  box-sizing: border-box;
+  padding: 90px 0 90px;
 }
